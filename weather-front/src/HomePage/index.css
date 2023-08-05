@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    align-items: stretch; /* 讓內容填滿容器高度 */
+    min-height: 100vh; /* 設定最小高度為視窗高度 */
+  }
+.list{
+    flex : 3;
+    padding: 10px;
+    border : 2px solid #ff0000;
+    display: flex;
+    flex-direction: column;
+}
+.picture{
+  flex : 7;
+  padding: 10px;
+  border : 2px solid #8400ff;
+  display: flex;
+  flex-direction: column;
+}
