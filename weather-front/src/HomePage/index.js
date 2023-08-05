@@ -7,9 +7,9 @@ const HomePage = () =>{
     const fetchData = (setData)=>{
         fetch('http://localhost:3000/posts/1')
         .then(res => res.json())
-        .then(data =>{
-            setData(data);
-            console.log(data);
+        .then(resdata =>{
+            setData(resdata);
+            console.log(resdata);
         })
     }
     useEffect(()=>{
@@ -17,7 +17,7 @@ const HomePage = () =>{
     },[])
 
     return <div className="container">
-        <List data={data}/>
+        <List data={data.data}/>
         <Picture/>
     </div>
 }

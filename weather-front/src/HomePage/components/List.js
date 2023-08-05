@@ -16,12 +16,12 @@ const List = ({data})=>{
         {name:"Pedro",age:21},
         {name:"Hope",age:23}
     ]
-    
+    console.log(data)
     console.log(users)
     return <div className="list">
-        {users.map((user)=>{
+        {data &&  data.map((item)=>{
             return(
-                <div>{user.name}</div>
+                <div>{item.Nation}</div>
             )
         })}
     </div>     
