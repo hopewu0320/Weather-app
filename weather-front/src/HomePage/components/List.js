@@ -11,17 +11,17 @@ next : json Server資料 放在表單
 */ 
 const List = ({data})=>{
     
-    /*
+    
     const users = [
         {name:"Pedro",age:21},
         {name:"Hope",age:23}
     ]
-    */
-    console.log(data.data)
+    
+    console.log(users)
     return <div className="list">
-        {data.data.map((item)=>{
+        {users.map((user)=>{
             return(
-                <div>{item.Nation}</div>
+                <div>{user.name}</div>
             )
         })}
     </div>     
