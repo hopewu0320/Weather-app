@@ -1,1 +1,2 @@
-121212
+cd desktop\WeatherApp
+.\side_weather_app\script\activate
