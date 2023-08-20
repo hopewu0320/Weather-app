@@ -20,6 +20,10 @@ def get_data(request):
     with open('sample.json', 'w') as f:
         json.dump(json_list, f)
 
+<<<<<<< HEAD
     json_dict['data'] = json_list
+=======
+    
+>>>>>>> ae3eff55 (New branch)
     
     return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list

@@ -3,6 +3,7 @@ import WeatherData from "./components/WeatherData"
 import {useEffect,useState} from "react"
 const HomePage = () =>{
     const [data,setData] = useState({});
+<<<<<<< HEAD
     const [selectedItem, setSelectedItem] = useState([]);
 
     const fetchData = async ()=>{
@@ -11,6 +12,16 @@ const HomePage = () =>{
         const weatherData = await weatherResponse.json()
         setData(weatherData)
         
+=======
+    
+    const fetchData = (setData)=>{
+        fetch('http://localhost:3000/posts/1')
+        .then(res => res.json())
+        .then(resdata =>{
+            setData(resdata);
+            console.log(resdata)
+        })
+>>>>>>> ae3eff55 (New branch)
     }
     
     useEffect(()=>{
