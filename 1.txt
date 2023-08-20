@@ -1,2 +1,2 @@
-cd desktop\WeatherApp
-.\side_weather_app\script\activate
+列表點選一個地點
+右邊畫面出現地點相關的值 + 晴天/雨天
