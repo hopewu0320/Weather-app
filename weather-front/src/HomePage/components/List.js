@@ -23,7 +23,7 @@ const List = ({data})=>{
                 return(
                     <option>
                         <div>
-                            {item.Nation} {item.Temperature}
+                            {item.Loc} {item.DayTemp}
                         </div>
                     </option>
                 )
