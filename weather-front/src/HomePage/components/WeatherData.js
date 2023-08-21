@@ -1,14 +1,14 @@
 import "../index.css"
-
+import Picture from "./Picture"
 
 const WeatherData = ({selectedItem})=>{
-    //console.log(selectedItem)
     
     
-    return <div className="picture">
-        {selectedItem.Loc}
+    
+    return <div className="WeatherData">
+        <Picture selectedItem={selectedItem}/>
     </div>
-       
+    
 }
 
 export default WeatherData;
