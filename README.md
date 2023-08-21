@@ -53,3 +53,17 @@ def get_data(request):
     return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list
 
 ```
+
+selectedIndex 可以取出現在的option的值
+``` javascript
+const [selectedItem, setSelectedItem] = useState(null);
+    const PredictWeather = (e) =>{
+        
+        
+        const selectedIndex = e.target.selectedIndex;
+        const selectedData = data[selectedIndex];
+        setSelectedItem(selectedData);
+        console.log(selectedData)
+        //return Picture data={e.target.value}/>
+    }
+```
