@@ -3,11 +3,11 @@ import Rainy from '../../image/Rainy.jpg'
 import "../index.css"
 const Picture = ({selectedItem}) => {
     if(selectedItem.Guess){
-        return <div >
-            <img src={Sunny} alt="Sunny"/>
+        return <div className="Picture">
+            <img src={Sunny} alt="Sunny" />
         </div>
     }else{
-        return <div >
+        return <div className="Picture">
             <img src={Rainy} alt="Rainy" />
         </div>
     }

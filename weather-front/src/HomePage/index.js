@@ -18,9 +18,10 @@ const HomePage = () =>{
     },[])
     
 
-    return <div className="container">
+    return <div className="container" >
         <List data={data.data} setSelectedItem={setSelectedItem} />
-        <WeatherData selectedItem={selectedItem}/>
+        
+        <WeatherData selectedItem={selectedItem} />
     </div>
 }
 export default HomePage;
