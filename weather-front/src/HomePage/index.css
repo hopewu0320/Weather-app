@@ -2,18 +2,37 @@
     display: flex;
     align-items: stretch; /* 讓內容填滿容器高度 */
     min-height: 100vh; /* 設定最小高度為視窗高度 */
-  }
+    
+}
 .list{
-    flex : 3;
+    flex : 6;
+    font-size: 16px;
     padding: 10px;
     border : 2px solid #ff0000;
     display: flex;
     flex-direction: column;
+    
 }
 .WeatherData{
-  flex : 7;
+  flex : 4;
+  display: flex;
   padding: 10px;
   border : 2px solid #8400ff;
-  display: flex;
-  flex-direction: column;
+  /* 水平置中 */
+  justify-content: center;    
+  /* 垂直置中 */
+  align-content: center;      
+  flex-wrap: wrap
+}
+
+select{
+  font-size : 30px;
+}
+
+option{
+  font-size : 30px;
+}
+img{
+  width : 700px ;
+  height : 700px ;
 }
