@@ -1,11 +1,20 @@
+/*
+container
+  list
+  WeatherData
+    Text
+    Picture
+*/
+
+
 .container {
     display: flex;
     align-items: stretch; /* 讓內容填滿容器高度 */
     min-height: 100vh; /* 設定最小高度為視窗高度 */
     
 }
-.list{
-    
+.ListData{     /*左半邊*/
+      
     flex : 6;
     
     padding: 10px;
@@ -14,22 +23,55 @@
     flex-direction: column;
     
 }
+.list{  /*左上*/
+  flex: 1;
+  display: flex;
+  
+  flex-direction: column;
+  padding: 10px;
+}
+.ShowCorrect{ /*左下*/
+  flex: 99;
+  display: flex;
+  
+  flex-direction: column;
+  padding: 10px;
+}
+
+.OX{ 
+ 
+  display: flex;
+  flex: 8;
+  flex-direction: column;
+  padding: 10px;
+  border : 2px solid #944272;
+
+  /* 水平置中 */
+  justify-content: center;    
+  /* 垂直置中 */
+  align-content: center;      
+  flex-wrap: wrap
+}
+.correction{ 
+ 
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  padding: 10px;
+  border : 2px solid #3c851f;
+}
+
 .WeatherData{
   flex : 4;
   display: flex;
   padding: 10px;
-  flex-direction: column; /*list有 WeatherData也要有 才會上下切*/
+  flex-direction: column; /*上下切 default是左右切*/
 
   border : 2px solid #8400ff;
   
 }
 
-.Text_Picture{
-  display: flex;
-  align-items: stretch; /* 讓內容填滿容器高度 */
-  min-height: 100vh; /* 設定最小高度為視窗高度 */
-  
-}
+
 .Text{
   flex: 1;
   display: flex;
@@ -70,4 +112,7 @@ option{
 img{
   width : 700px ;
   height : 700px ;
+}
+p{
+  font-size: 50px;
 }

@@ -17,10 +17,8 @@ const HomePage = () =>{
         fetchData()
     },[])
     
-
     return <div className="container" >
-        <List data={data.data} setSelectedItem={setSelectedItem} />
-        
+        <List data={data.data} setSelectedItem={setSelectedItem}  selectedItem={selectedItem}/>
         <WeatherData selectedItem={selectedItem} />
     </div>
 }
