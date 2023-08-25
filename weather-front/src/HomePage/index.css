@@ -45,7 +45,7 @@ container
   flex-direction: column;
   padding: 10px;
   border : 2px solid #944272;
-
+  font-size: 700px;
   /* 水平置中 */
   justify-content: center;    
   /* 垂直置中 */
@@ -59,6 +59,11 @@ container
   flex-direction: column;
   padding: 10px;
   border : 2px solid #3c851f;
+  justify-content: center;    
+  /* 垂直置中 */
+  align-content: center;      
+  flex-wrap: wrap;
+  font-size : 50px;
 }
 
 .WeatherData{

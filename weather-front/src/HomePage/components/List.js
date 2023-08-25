@@ -43,23 +43,19 @@ const List = ({data,setSelectedItem,selectedItem})=>{
         </select>
         {selectedItem.Guess==selectedItem.Weather ?
         <div className="ShowCorrect">
-            <div className="OX">
-                <p style={{color: 'green'}}>
+            <div className="OX" style={{color: 'green'}}>
                     O
-                </p>
             </div>
             <div className="correction">
-                1234
+                
             </div>
         </div>:
         <div className="ShowCorrect">
-            <div className="OX">
-                <p style={{color: 'red'}}>
-                    X  {selectedItem.Guess ? "Sunny" : "Rainy"} => {selectedItem.Guess ? "Rainy" : "Sunny"}
-                </p>
+            <div className="OX" style={{color: 'red'}}>
+                    X    
             </div>
             <div className="correction">
-                1234
+                {selectedItem.Guess ? "Sunny" : "Rainy"} => {selectedItem.Guess ? "Rainy" : "Sunny"}
             </div>
         </div>
         }
