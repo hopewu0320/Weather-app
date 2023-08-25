@@ -1,9 +1,9 @@
 import List from "./components/List"
-import Picture from "./components/Picture"
+import WeatherData from "./components/WeatherData"
 import {useEffect,useState} from "react"
 const HomePage = () =>{
     const [data,setData] = useState({});
-    const [data2P, setData2P] = useState(null);
+    const [selectedItem, setSelectedItem] = useState([]);
 
     const fetchData = async ()=>{
         const weatherResponse = await fetch('/weather')
@@ -19,10 +19,8 @@ const HomePage = () =>{
     
 
     return <div className="container">
-        <List data={data.data} setData={setData} />
-        <div className="picture">
-            <Picture  />
-        </div>
+        <List data={data.data} setSelectedItem={setSelectedItem} />
+        <WeatherData selectedItem={selectedItem}/>
     </div>
 }
 export default HomePage;
