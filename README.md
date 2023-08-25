@@ -28,6 +28,8 @@ python preprocess.py
 ```
 
 # Note
+### *Pictures are from pinterest
+
 Put the data in the from of   
 {data:[  
         ......  
