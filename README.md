@@ -1,5 +1,6 @@
 # Quick start
 >Prequisite  
+>>Python 3.9.12  
 >>Django  4.1.2  
 >>React  
 >>Scikit learn  
@@ -27,10 +28,10 @@ python preprocess.py
 ```
 
 # Note
-put the data in the from of   
-{data:[
-    ......
-]
+Put the data in the from of   
+{data:[  
+        ......  
+    ]  
 }
 ```python
 PATH = './Model/result_df.csv'
