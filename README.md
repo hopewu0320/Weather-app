@@ -14,7 +14,7 @@ See https://bobbyhadz.com/blog/react-could-not-proxy-request-to-localhost
 "proxy": "http://127.0.0.1:8000"
 ```
 ## Run code
-Decomment Tain Model to get Weather Model and
+Decomment Tain Model in Model\Adaboost_MultiModel.ipynb to get Weather Model and
 ```
 cd WeatherApp\Model\side_weather_app\script\activate
 ```
