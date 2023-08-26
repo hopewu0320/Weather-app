@@ -9,6 +9,7 @@ const HomePage = () =>{
         .then(res => res.json())
         .then(resdata =>{
             setData(resdata);
+            console.log(resdata)
         })
     }
     useEffect(()=>{
