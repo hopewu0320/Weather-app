@@ -5,8 +5,8 @@ const Text = ({selectedItem})=>{
     
     
     
-    return <div className="">
-        
+    return <div className="Text">
+        <p>123</p>
     </div>
     
 }

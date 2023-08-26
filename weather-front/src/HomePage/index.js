@@ -50,6 +50,7 @@ const HomePage = () =>{
     },[])
     
 
+<<<<<<< HEAD
     return <div className="container">
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -65,6 +66,12 @@ const HomePage = () =>{
         <List data={data.data} setSelectedItem={setSelectedItem} />
         <WeatherData selectedItem={selectedItem}/>
 >>>>>>> b131fc95 (傳送成功)
+=======
+    return <div className="container" >
+        <List data={data.data} setSelectedItem={setSelectedItem} />
+        
+        <WeatherData selectedItem={selectedItem} />
+>>>>>>> 4ce8a225 (上下切版)
     </div>
 }
 export default HomePage;
