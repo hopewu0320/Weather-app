@@ -2,12 +2,17 @@ import "../index.css"
 <<<<<<< HEAD
 <<<<<<< HEAD
 import WeatherData from "./WeatherData"
+<<<<<<< HEAD
 =======
 import Picture from "./Picture"
 >>>>>>> d2f21de2 (儲存item in data)
 =======
 import WeatherData from "./WeatherData"
 >>>>>>> b131fc95 (傳送成功)
+=======
+import Sunny from '../../image/Sunny.jpg'
+import Rainy from '../../image/Rainy.jpg'
+>>>>>>> 019eeef4 (OX correction)
 import {useEffect,useState} from "react"
 function refresh(){
     alert('Hello')
@@ -19,6 +24,7 @@ onClick後 會去後端拉資料 顯示在前端(跳頁) onChange
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 const List = ({data,setSelectedItem})=>{
 =======
 const List = ({data,setData})=>{
@@ -26,6 +32,9 @@ const List = ({data,setData})=>{
 =======
 const List = ({data,setSelectedItem})=>{
 >>>>>>> b131fc95 (傳送成功)
+=======
+const List = ({data,setSelectedItem,selectedItem})=>{
+>>>>>>> 019eeef4 (OX correction)
     // const users = [
     //     {name:"Pedro",age:21},
     //     {name:"Hope",age:23}
@@ -75,11 +84,13 @@ const List = ({data,setSelectedItem})=>{
 >>>>>>> 9a0cf5ce (Picture and font size FIN)
     }
     
-    return <div className="list">
-        <select  onChange={PredictWeather}>
+    
+    return <div className="ListData">
+        <select  onChange={PredictWeather} className="list">
             {data && data.map((item)=>{
                 return(
                     <option>
+<<<<<<< HEAD
 <<<<<<< HEAD
                         <div>
 <<<<<<< HEAD
@@ -102,12 +113,37 @@ const List = ({data,setSelectedItem})=>{
                                 {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
                             </p>
 >>>>>>> 9a0cf5ce (Picture and font size FIN)
+=======
+                        <div >                      
+                            {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}                  
+>>>>>>> 019eeef4 (OX correction)
                         </div>
                     </option>
                 )
             })}
         </select>
-        
+        {selectedItem.Guess==selectedItem.Weather ?
+        <div className="ShowCorrect">
+            <div className="OX">
+                <p style={{color: 'green'}}>
+                    O
+                </p>
+            </div>
+            <div className="correction">
+                1234
+            </div>
+        </div>:
+        <div className="ShowCorrect">
+            <div className="OX">
+                <p style={{color: 'red'}}>
+                    X  {selectedItem.Guess ? "Sunny" : "Rainy"} => {selectedItem.Guess ? "Rainy" : "Sunny"}
+                </p>
+            </div>
+            <div className="correction">
+                1234
+            </div>
+        </div>
+        }
     </div>     
 }
 

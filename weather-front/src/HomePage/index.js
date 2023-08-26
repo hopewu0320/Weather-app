@@ -49,6 +49,7 @@ const HomePage = () =>{
         fetchData()
     },[])
     
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     return <div className="container">
@@ -67,9 +68,10 @@ const HomePage = () =>{
         <WeatherData selectedItem={selectedItem}/>
 >>>>>>> b131fc95 (傳送成功)
 =======
+=======
+>>>>>>> 019eeef4 (OX correction)
     return <div className="container" >
-        <List data={data.data} setSelectedItem={setSelectedItem} />
-        
+        <List data={data.data} setSelectedItem={setSelectedItem}  selectedItem={selectedItem}/>
         <WeatherData selectedItem={selectedItem} />
 >>>>>>> 4ce8a225 (上下切版)
     </div>
