@@ -39,10 +39,15 @@ const List = ({data,setSelectedItem})=>{
                     <option>
                         <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
 =======
                             {item.Loc} {item.DayTemp}
 >>>>>>> 6ae00057 (API connection OK)
+=======
+                            {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} 
+                            DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
+>>>>>>> 46656af3 (取前兩位)
                         </div>
                     </option>
                 )
