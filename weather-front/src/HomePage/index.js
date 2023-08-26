@@ -14,6 +14,7 @@ const HomePage = () =>{
         
 =======
     
+<<<<<<< HEAD
     const fetchData = (setData)=>{
         fetch('http://localhost:3000/posts/1')
         .then(res => res.json())
@@ -22,6 +23,14 @@ const HomePage = () =>{
             console.log(resdata)
         })
 >>>>>>> ae3eff55 (New branch)
+=======
+    const fetchData = async ()=>{
+        const weatherResponse = await fetch('/weather')
+        console.log("Fetch complete")
+        const weatherData = await weatherResponse.json()
+        setData(weatherData)
+        //console.log(weatherData)
+>>>>>>> 6ae00057 (API connection OK)
     }
     
     useEffect(()=>{

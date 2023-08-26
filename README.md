@@ -28,10 +28,17 @@ python preprocess.py
 ```
 
 # Note
+<<<<<<< HEAD
 Put the data in the from of   
 {data:[  
         ......  
     ]  
+=======
+put the data in the from of   
+{data:[
+    ......
+]
+>>>>>>> 6ae00057 (API connection OK)
 }
 ```python
 PATH = './Model/result_df.csv'
@@ -52,6 +59,7 @@ def get_data(request):
     
     return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list
 
+<<<<<<< HEAD
 ```
 
 selectedIndex 可以取出現在的option的值
@@ -66,4 +74,6 @@ const [selectedItem, setSelectedItem] = useState(null);
         console.log(selectedData)
         //return Picture data={e.target.value}/>
     }
+=======
+>>>>>>> 6ae00057 (API connection OK)
 ```

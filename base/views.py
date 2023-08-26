@@ -21,9 +21,14 @@ def get_data(request):
         json.dump(json_list, f)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     json_dict['data'] = json_list
 =======
     
 >>>>>>> ae3eff55 (New branch)
     
+=======
+    json_dict['data'] = json_list
+    
+>>>>>>> 6ae00057 (API connection OK)
     return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list
