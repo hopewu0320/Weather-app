@@ -9,22 +9,10 @@ import json
 PATH = './Model/result_df.csv'
 def get_data(request):
     result_df = pd.read_csv(PATH) #35156
-    for index,row in result_df.iterrows():
-        if not Weather.objects.filter(Loc=row['Loc'],
-        NightTemp=row['NightTemp'],
-        DayTemp=row['DayTemp']).exists():
-            Weather.objects.create(
-                Loc = row['Loc'],
-                NightTemp = row['NightTemp'],
-                DayTemp = row['DayTemp'],
-                NightHumidity = row['NightHumidity'],
-                DayHumidity = row['DayHumidity'],
-                WindSpeed = row['WindSpeed'],
-                real_weather = row['Weather'],
-                guess_weather = row['Guess'],
-            )
+    #GET 前端的網址
     
     json_list = []
+    json_dict = {}
     for index,row in result_df.iterrows():
         row2dict = dict(row)
         json_list.append(row2dict)
@@ -32,6 +20,6 @@ def get_data(request):
     with open('sample.json', 'w') as f:
         json.dump(json_list, f)
 
-    context = {}
+    json_dict['data'] = json_list
     
-    return JsonResponse(json_list,safe=False)  #should be dictionary or list or dictionary of list
+    return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list

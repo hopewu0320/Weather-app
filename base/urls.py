@@ -4,5 +4,5 @@ from . import views
 
 #把前端初始網址放在path中
 urlpatterns = [
-    path("", views.get_data,name='get_data'),
+    path("weather/", views.get_data,name='get_data'),
 ]
