@@ -1,7 +1,5 @@
 import "../index.css"
 import WeatherData from "./WeatherData"
-import Sunny from '../../image/Sunny.jpg'
-import Rainy from '../../image/Rainy.jpg'
 import {useEffect,useState} from "react"
 function refresh(){
     alert('Hello')
@@ -11,7 +9,7 @@ onClick後 會去後端拉資料 顯示在前端(跳頁) onChange
 */
 
 
-const List = ({data,setSelectedItem,selectedItem})=>{
+const List = ({data,setSelectedItem})=>{
     // const users = [
     //     {name:"Pedro",age:21},
     //     {name:"Hope",age:23}
@@ -20,45 +18,33 @@ const List = ({data,setSelectedItem,selectedItem})=>{
     /*
     const 很多個變數 = setState()
     */ 
-   
+   var d = []
     
     const PredictWeather = (e) =>{
+        
+        
         const selectedIndex = e.target.selectedIndex;
         const selectedData = data[selectedIndex];
+        //d['data'] =  selectedData  //給WeatherData 使用map必須是array 不能是object
         setSelectedItem(selectedData);
+        console.log(selectedData)
+        //console.log(typeof(d))
+        //return Picture data={e.target.value}/>
     }
     
-    
-    return <div className="ListData">
-        <select  onChange={PredictWeather} className="list">
+    return <div className="list">
+        <select name="WeatherData" onChange={PredictWeather}>
             {data && data.map((item)=>{
                 return(
                     <option>
-                        <div >                      
-                            {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}                  
+                        <div>
+                            {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
                         </div>
                     </option>
                 )
             })}
         </select>
-        {selectedItem.Guess==selectedItem.Weather ?
-        <div className="ShowCorrect">
-            <div className="OX" style={{color: 'green'}}>
-                    O
-            </div>
-            <div className="correction">
-                
-            </div>
-        </div>:
-        <div className="ShowCorrect">
-            <div className="OX" style={{color: 'red'}}>
-                    X    
-            </div>
-            <div className="correction">
-                {selectedItem.Guess ? "Sunny" : "Rainy"} => {selectedItem.Guess ? "Rainy" : "Sunny"}
-            </div>
-        </div>
-        }
+        
     </div>     
 }
 

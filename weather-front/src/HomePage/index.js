@@ -17,9 +17,10 @@ const HomePage = () =>{
         fetchData()
     },[])
     
-    return <div className="container" >
-        <List data={data.data} setSelectedItem={setSelectedItem}  selectedItem={selectedItem}/>
-        <WeatherData selectedItem={selectedItem} />
+
+    return <div className="container">
+        <List data={data.data} setSelectedItem={setSelectedItem} />
+        <WeatherData selectedItem={selectedItem}/>
     </div>
 }
 export default HomePage;
