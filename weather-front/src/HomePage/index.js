@@ -5,6 +5,9 @@ const HomePage = () =>{
     const [data,setData] = useState({});
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b131fc95 (傳送成功)
     const [selectedItem, setSelectedItem] = useState([]);
 
     const fetchData = async ()=>{
@@ -49,6 +52,7 @@ const HomePage = () =>{
 
     return <div className="container">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <List data={data.data} setSelectedItem={setSelectedItem} />
         <WeatherData selectedItem={selectedItem}/>
 =======
@@ -57,6 +61,10 @@ const HomePage = () =>{
             <Picture  />
         </div>
 >>>>>>> d2f21de2 (儲存item in data)
+=======
+        <List data={data.data} setSelectedItem={setSelectedItem} />
+        <WeatherData selectedItem={selectedItem}/>
+>>>>>>> b131fc95 (傳送成功)
     </div>
 }
 export default HomePage;

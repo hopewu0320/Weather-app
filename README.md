@@ -66,6 +66,9 @@ def get_data(request):
     return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b131fc95 (傳送成功)
 ```
 
 selectedIndex 可以取出現在的option的值
@@ -80,6 +83,9 @@ const [selectedItem, setSelectedItem] = useState(null);
         console.log(selectedData)
         //return Picture data={e.target.value}/>
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 6ae00057 (API connection OK)
+=======
+>>>>>>> b131fc95 (傳送成功)
 ```
