@@ -29,16 +29,22 @@ python preprocess.py
 
 # Note
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d2f21de2 (儲存item in data)
 Put the data in the from of   
 {data:[  
         ......  
     ]  
+<<<<<<< HEAD
 =======
 put the data in the from of   
 {data:[
     ......
 ]
 >>>>>>> 6ae00057 (API connection OK)
+=======
+>>>>>>> d2f21de2 (儲存item in data)
 }
 ```python
 PATH = './Model/result_df.csv'
