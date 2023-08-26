@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0b0e62e6 (90% finish need to modify CSS)
 import Sunny from '../../image/Sunny.jpg'
 import Rainy from '../../image/Rainy.jpg'
 const Picture = ({selectedItem}) => {
@@ -12,6 +15,7 @@ const Picture = ({selectedItem}) => {
         </div>
     }
     
+<<<<<<< HEAD
 =======
 import "../index.css"
 
@@ -23,6 +27,8 @@ const Picture = ()=>{
     </div>
        
 >>>>>>> d2f21de2 (儲存item in data)
+=======
+>>>>>>> 0b0e62e6 (90% finish need to modify CSS)
 }
 
 export default Picture;

@@ -1,5 +1,6 @@
 import "../index.css"
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Picture from "./Picture"
 
 const WeatherData = ({selectedItem})=>{
@@ -12,16 +13,23 @@ const WeatherData = ({selectedItem})=>{
     
 =======
 
+=======
+import Picture from "./Picture"
+>>>>>>> 0b0e62e6 (90% finish need to modify CSS)
 
 const WeatherData = ({selectedItem})=>{
-    //console.log(selectedItem)
     
     
-    return <div className="picture">
-        {selectedItem.Loc}
+    
+    return <div className="WeatherData">
+        <Picture selectedItem={selectedItem}/>
     </div>
+<<<<<<< HEAD
        
 >>>>>>> b131fc95 (傳送成功)
+=======
+    
+>>>>>>> 0b0e62e6 (90% finish need to modify CSS)
 }
 
 export default WeatherData;
