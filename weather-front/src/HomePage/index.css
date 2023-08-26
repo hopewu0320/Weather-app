@@ -1,123 +1,19 @@
-/*
-container
-  list
-  WeatherData
-    Text
-    Picture
-*/
-
-
 .container {
     display: flex;
     align-items: stretch; /* 讓內容填滿容器高度 */
     min-height: 100vh; /* 設定最小高度為視窗高度 */
-    
-}
-.ListData{     /*左半邊*/
-      
-    flex : 6;
-    
+  }
+.list{
+    flex : 3;
     padding: 10px;
     border : 2px solid #ff0000;
     display: flex;
     flex-direction: column;
-    
 }
-.list{  /*左上*/
-  flex: 1;
-  display: flex;
-  
-  flex-direction: column;
-  padding: 10px;
-}
-.ShowCorrect{ /*左下*/
-  flex: 99;
-  display: flex;
-  
-  flex-direction: column;
-  padding: 10px;
-}
-
-.OX{ 
- 
-  display: flex;
-  flex: 8;
-  flex-direction: column;
-  padding: 10px;
-  border : 2px solid #944272;
-  font-size: 700px;
-  /* 水平置中 */
-  justify-content: center;    
-  /* 垂直置中 */
-  align-content: center;      
-  flex-wrap: wrap
-}
-.correction{ 
- 
-  display: flex;
-  flex: 2;
-  flex-direction: column;
-  padding: 10px;
-  border : 2px solid #3c851f;
-  justify-content: center;    
-  /* 垂直置中 */
-  align-content: center;      
-  flex-wrap: wrap;
-  font-size : 50px;
-}
-
 .WeatherData{
-  flex : 4;
-  display: flex;
+  flex : 7;
   padding: 10px;
-  flex-direction: column; /*上下切 default是左右切*/
-
   border : 2px solid #8400ff;
-  
-}
-
-
-.Text{
-  flex: 1;
   display: flex;
-  background-color: #e0e0e0;
   flex-direction: column;
-  padding: 10px;
-  
-  /* 水平置中 */
-  justify-content: center;    
-  /* 垂直置中 */
-  align-content: center;      
-  flex-wrap: wrap
-}
-.Picture{
-  flex: 1;
-  display: flex;
-  background-color: #2f3d7c;
-  flex-direction: column-reverse;
-  padding: 10px;
-
-  /* 水平置中 */
-  justify-content: center;    
-  /* 垂直置中 */
-  align-content: center;      
-  flex-wrap: wrap
-}
-
-
-
-
-select{
-  font-size : 30px;
-}
-
-option{
-  font-size : 30px;
-}
-img{
-  width : 700px ;
-  height : 700px ;
-}
-p{
-  font-size: 50px;
 }

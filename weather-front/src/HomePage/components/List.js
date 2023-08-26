@@ -3,6 +3,7 @@ import "../index.css"
 <<<<<<< HEAD
 import WeatherData from "./WeatherData"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import Picture from "./Picture"
 >>>>>>> d2f21de2 (儲存item in data)
@@ -13,6 +14,8 @@ import WeatherData from "./WeatherData"
 import Sunny from '../../image/Sunny.jpg'
 import Rainy from '../../image/Rainy.jpg'
 >>>>>>> 019eeef4 (OX correction)
+=======
+>>>>>>> d27b24c6 (change picture)
 import {useEffect,useState} from "react"
 function refresh(){
     alert('Hello')
@@ -22,6 +25,7 @@ onClick後 會去後端拉資料 顯示在前端(跳頁) onChange
 */
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +39,9 @@ const List = ({data,setSelectedItem})=>{
 =======
 const List = ({data,setSelectedItem,selectedItem})=>{
 >>>>>>> 019eeef4 (OX correction)
+=======
+const List = ({data,setSelectedItem})=>{
+>>>>>>> d27b24c6 (change picture)
     // const users = [
     //     {name:"Pedro",age:21},
     //     {name:"Hope",age:23}
@@ -46,10 +53,14 @@ const List = ({data,setSelectedItem,selectedItem})=>{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    var d = []
 =======
    
 >>>>>>> 9a0cf5ce (Picture and font size FIN)
+=======
+   var d = []
+>>>>>>> d27b24c6 (change picture)
     
 =======
    
@@ -60,17 +71,23 @@ const List = ({data,setSelectedItem,selectedItem})=>{
     
 >>>>>>> b131fc95 (傳送成功)
     const PredictWeather = (e) =>{
+        
+        
         const selectedIndex = e.target.selectedIndex;
         const selectedData = data[selectedIndex];
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b131fc95 (傳送成功)
+=======
+>>>>>>> d27b24c6 (change picture)
         //d['data'] =  selectedData  //給WeatherData 使用map必須是array 不能是object
         setSelectedItem(selectedData);
         console.log(selectedData)
         //console.log(typeof(d))
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         setSelectedItem(selectedData);
@@ -82,14 +99,17 @@ const List = ({data,setSelectedItem,selectedItem})=>{
 =======
         setSelectedItem(selectedData);
 >>>>>>> 9a0cf5ce (Picture and font size FIN)
+=======
+        //return Picture data={e.target.value}/>
+>>>>>>> d27b24c6 (change picture)
     }
     
-    
-    return <div className="ListData">
-        <select  onChange={PredictWeather} className="list">
+    return <div className="list">
+        <select name="WeatherData" onChange={PredictWeather}>
             {data && data.map((item)=>{
                 return(
                     <option>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         <div>
@@ -117,29 +137,16 @@ const List = ({data,setSelectedItem,selectedItem})=>{
                         <div >                      
                             {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}                  
 >>>>>>> 019eeef4 (OX correction)
+=======
+                        <div>
+                            {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
+>>>>>>> d27b24c6 (change picture)
                         </div>
                     </option>
                 )
             })}
         </select>
-        {selectedItem.Guess==selectedItem.Weather ?
-        <div className="ShowCorrect">
-            <div className="OX" style={{color: 'green'}}>
-                    O
-            </div>
-            <div className="correction">
-                
-            </div>
-        </div>:
-        <div className="ShowCorrect">
-            <div className="OX" style={{color: 'red'}}>
-                    X    
-            </div>
-            <div className="correction">
-                {selectedItem.Guess ? "Sunny" : "Rainy"} => {selectedItem.Guess ? "Rainy" : "Sunny"}
-            </div>
-        </div>
-        }
+        
     </div>     
 }
 
