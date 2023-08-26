@@ -12,6 +12,7 @@ def get_data(request):
     #GET 前端的網址
     
     json_list = []
+    json_dict = {}
     for index,row in result_df.iterrows():
         row2dict = dict(row)
         json_list.append(row2dict)
@@ -19,6 +20,6 @@ def get_data(request):
     with open('sample.json', 'w') as f:
         json.dump(json_list, f)
 
+    json_dict['data'] = json_list
     
-    
-    return JsonResponse(json_list,safe=False)  #should be dictionary or list or dictionary of list
+    return JsonResponse(json_dict,safe=False)  #should be dictionary or list or dictionary of list
