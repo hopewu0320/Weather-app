@@ -1,23 +1,25 @@
 import List from "./components/List"
-import Picture from "./components/Picture"
+import WeatherData from "./components/WeatherData"
 import {useEffect,useState} from "react"
 const HomePage = () =>{
     const [data,setData] = useState({});
-    
-    const fetchData = (setData)=>{
-        fetch('http://localhost:3000/posts/1')
-        .then(res => res.json())
-        .then(resdata =>{
-            setData(resdata);
-        })
-    }
-    useEffect(()=>{
-        fetchData(setData)
-    },[])
+    const [selectedItem, setSelectedItem] = useState([]);
 
-    return <div className="container">
-        <List data={data.data}/>
-        <Picture/>
+    const fetchData = async ()=>{
+        const weatherResponse = await fetch('/weather')
+        console.log("Fetch complete")
+        const weatherData = await weatherResponse.json()
+        setData(weatherData)
+        
+    }
+    
+    useEffect(()=>{
+        fetchData()
+    },[])
+    
+    return <div className="container" >
+        <List data={data.data} setSelectedItem={setSelectedItem}  selectedItem={selectedItem}/>
+        <WeatherData selectedItem={selectedItem} />
     </div>
 }
 export default HomePage;
