@@ -23,7 +23,8 @@ const List = ({data})=>{
                 return(
                     <option>
                         <div>
-                            {item.Loc} {item.DayTemp}
+                            {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} 
+                            DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
                         </div>
                     </option>
                 )
