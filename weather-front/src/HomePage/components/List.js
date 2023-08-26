@@ -36,7 +36,11 @@ const List = ({data,setSelectedItem})=>{
     */ 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    var d = []
+=======
+   
+>>>>>>> 9a0cf5ce (Picture and font size FIN)
     
 =======
    
@@ -47,10 +51,9 @@ const List = ({data,setSelectedItem})=>{
     
 >>>>>>> b131fc95 (傳送成功)
     const PredictWeather = (e) =>{
-        
-        
         const selectedIndex = e.target.selectedIndex;
         const selectedData = data[selectedIndex];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -67,13 +70,17 @@ const List = ({data,setSelectedItem})=>{
 =======
 >>>>>>> b131fc95 (傳送成功)
         //return Picture data={e.target.value}/>
+=======
+        setSelectedItem(selectedData);
+>>>>>>> 9a0cf5ce (Picture and font size FIN)
     }
     
     return <div className="list">
-        <select name="WeatherData" onChange={PredictWeather}>
+        <select  onChange={PredictWeather}>
             {data && data.map((item)=>{
                 return(
                     <option>
+<<<<<<< HEAD
                         <div>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -89,6 +96,12 @@ const List = ({data,setSelectedItem})=>{
 =======
                             {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
 >>>>>>> d2f21de2 (儲存item in data)
+=======
+                        <div >
+                            <p >
+                                {item.Loc} DayTemp:{item.DayTemp.toFixed(2)} NightTemp:{item.DayTemp.toFixed(2)} WindSpeed:{item.WindSpeed.toFixed(2)} DayHumidity:{item.DayHumidity.toFixed(2)} NightHumidity:{item.NightHumidity.toFixed(2)}
+                            </p>
+>>>>>>> 9a0cf5ce (Picture and font size FIN)
                         </div>
                     </option>
                 )

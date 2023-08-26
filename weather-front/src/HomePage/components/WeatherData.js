@@ -8,6 +8,7 @@ const WeatherData = ({selectedItem})=>{
     
     
     return <div className="WeatherData">
+        
         <Picture selectedItem={selectedItem}/>
     </div>
     
