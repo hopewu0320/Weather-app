@@ -1,5 +1,4 @@
 # Side Project in 2023/8/27
----
 # Quick start
 >Prequisite  
 >>Python 3.9.12  
