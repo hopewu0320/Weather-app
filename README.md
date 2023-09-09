@@ -67,3 +67,8 @@ const [selectedItem, setSelectedItem] = useState(null);
         //return Picture data={e.target.value}/>
     }
 ```
+
+# Result
+<img src="weather-front\src\image\Result_Sunny.png" alt="isolated" width="400"/>
+<img src="weather-front\src\image\Result_Rainy.png" alt="isolated" width="400"/>
+<img src="weather-front\src\image\Result_Incorrect.png" alt="isolated" width="400"/>
